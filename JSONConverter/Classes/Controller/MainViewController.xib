@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22689"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -146,27 +146,27 @@
                     <subviews>
                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zHm-8W-mp8">
                             <rect key="frame" x="908" y="6" width="84" height="37"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="70" id="KHU-BC-zzf"/>
-                                <constraint firstAttribute="height" constant="25" id="Ks7-GQ-6N8"/>
-                            </constraints>
                             <buttonCell key="cell" type="push" title="转换" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="uWG-Sb-jzp">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="KHU-BC-zzf"/>
+                                <constraint firstAttribute="height" constant="25" id="Ks7-GQ-6N8"/>
+                            </constraints>
                             <connections>
                                 <action selector="saveBtnAction:" target="-2" id="cXI-8X-NTi"/>
                             </connections>
                         </button>
                         <button translatesAutoresizingMaskIntoConstraints="NO" id="zBe-Rp-cI7">
                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                            <constraints>
-                                <constraint firstAttribute="width" secondItem="zBe-Rp-cI7" secondAttribute="height" multiplier="1:1" id="jsi-q3-rih"/>
-                            </constraints>
                             <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="setting" imagePosition="only" alignment="center" inset="2" id="bJ5-2Y-TL5">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="zBe-Rp-cI7" secondAttribute="height" multiplier="1:1" id="jsi-q3-rih"/>
+                            </constraints>
                             <connections>
                                 <action selector="settingAction:" target="-2" id="9y4-PN-kgw"/>
                             </connections>
@@ -181,9 +181,6 @@
                         </textField>
                         <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JNB-NE-r1E" userLabel="language Popup Button">
                             <rect key="frame" x="722" y="11" width="172" height="25"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="165" id="5Fg-0v-mF8"/>
-                            </constraints>
                             <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="L5V-RY-B65" id="e9m-eo-wWe">
                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="menu"/>
@@ -195,15 +192,15 @@
                                     </items>
                                 </menu>
                             </popUpButtonCell>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="165" id="5Fg-0v-mF8"/>
+                            </constraints>
                             <connections>
                                 <action selector="languageSelectedChanged:" target="-2" id="rUz-jM-Ezn"/>
                             </connections>
                         </popUpButton>
                         <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="axb-Mu-38g" userLabel="theme Popup Button">
                             <rect key="frame" x="461" y="11" width="147" height="25"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="140" id="vPy-mG-YgF"/>
-                            </constraints>
                             <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="GoE-NZ-LlG" id="lrq-uM-ZYb">
                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="menu"/>
@@ -215,6 +212,9 @@
                                     </items>
                                 </menu>
                             </popUpButtonCell>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="140" id="vPy-mG-YgF"/>
+                            </constraints>
                             <connections>
                                 <action selector="themeSelctedChanged:" target="-2" id="wAE-Hh-Tvp"/>
                             </connections>

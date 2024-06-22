@@ -34,6 +34,7 @@ extension NSTextView {
             
             scrollView.hasVerticalRuler = true
             scrollView.rulersVisible = true
+            lineNumberView.clipsToBounds = true
             scrollView.verticalRulerView = lineNumberView
         }
         

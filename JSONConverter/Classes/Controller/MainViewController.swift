@@ -85,7 +85,7 @@ class MainViewController: NSViewController {
     }
     
     private func setupUI() {
-        bottomToolBar.backgroundColor = NSColor(named: "LineColor")
+//        bottomToolBar.backgroundColor = NSColor(named: "LineColor")
         saveBtn.title = "parameter_save_title".localized
         
         languagesPopup.removeAllItems()
