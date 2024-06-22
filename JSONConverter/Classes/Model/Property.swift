@@ -35,10 +35,10 @@ class Property {
         
         let tempPropertyKey = autoCaseUnderline ? keyName.underlineToHump() : keyName
         className = tempPropertyKey.className(withPrefix: prefixStr)
-        if !parentNodeName.isEmpty {
-            className = "\(parentNodeName)\(tempPropertyKey.uppercaseFirstChar())"
-        }
-        
+//        if !parentNodeName.isEmpty {
+//            className = "\(tempPropertyKey.uppercaseFirstChar())"
+//        }
+//        
         builder = JSONProcesser.shared.builder(lang: langStruct.langType)
     }
         
