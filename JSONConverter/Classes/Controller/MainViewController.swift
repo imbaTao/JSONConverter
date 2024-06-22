@@ -362,8 +362,15 @@ extension MainViewController: NSTextViewDelegate {
     }
     
     func textDidChange(_ notification: Notification) {
-        generateClasses()
+        NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(generateClassesAction), object: nil)
+        perform(#selector(generateClassesAction), with: nil, afterDelay: 1)
     }
+    
+    @objc func generateClassesAction() {
+        generateClasses()
+        print("调用了了方法generateClassesAction")
+    }
+    
 }
 
 extension MainViewController: NSTextFieldDelegate {
